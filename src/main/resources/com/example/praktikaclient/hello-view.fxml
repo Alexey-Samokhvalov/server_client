@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.praktikaclient.controller.MainController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="summaryTable" layoutY="70.0" prefHeight="290.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="columnLns" prefWidth="74.0" text="Ф.И.О" />
+          <TableColumn fx:id="columnBirthday" prefWidth="98.0" text="Дата рождения" />
+            <TableColumn fx:id="columnActivities" prefWidth="119.0" text="Сфера деятельности" />
+            <TableColumn fx:id="columnExperience" prefWidth="76.0" text="Опыт работы" />
+            <TableColumn fx:id="columnEducation" prefWidth="86.0" text="Образование" />
+            <TableColumn fx:id="columnSkills" minWidth="0.0" prefWidth="85.0" text="Навыки" />
+            <TableColumn fx:id="columnContacts" prefWidth="95.0" text="Контакты" />
+            <TableColumn fx:id="columnDescription" prefWidth="166.0" text="Описание" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="31.0" text="Ваши резюме">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="650.0" layoutY="33.0" mnemonicParsing="false" text="Поиск вакансий">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="20.0" layoutY="365.0" mnemonicParsing="false" onAction="#addSummaryAction" text="Добавить" />
+      <Button layoutX="713.0" layoutY="365.0" mnemonicParsing="false" text="Выйти" />
+   </children>
+</AnchorPane>
